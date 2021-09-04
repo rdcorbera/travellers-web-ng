@@ -1,0 +1,8 @@
+<div *ngIf="selectedItem">
+    <h3>{{selectedItem.firstname | uppercase}} Details</h3>
+    <div><span>id: </span>{{selectedItem.id}}</div>
+    <div>
+      <label for="item-name">Traveler name: </label>
+      <input id="item-name" [(ngModel)]="selectedItem.firstname" placeholder="name">
+    </div>
+</div>
