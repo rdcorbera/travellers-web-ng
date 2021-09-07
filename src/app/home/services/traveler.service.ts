@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { TravelerItem } from '../travellers/models/traveler-item';
-import { TRAVELLERS } from '../mocks/travellers';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
@@ -8,16 +8,18 @@ import { Observable, of } from 'rxjs';
 })
 export class TravelerService {
 
-  constructor() { }
+  private travellersUrl = 'http://localhost:3100/api/travellers';
+
+  constructor(
+    private http: HttpClient,
+  ) { }
 
   getTravellers(): Observable<TravelerItem[]> {
-    return of(TRAVELLERS);
+    return this.http.get<TravelerItem[]>(this.travellersUrl);
   }
 
   getTraveler(id: number): Observable<TravelerItem> {
-    // For now, assume that a hero with the specified `id` always exists.
-    // Error handling will be added in the next step of the tutorial.
-    const traveler = TRAVELLERS.find(h => h.id === id)!;
-    return of(traveler);
+    const url = `${this.travellersUrl}/${id}`;
+    return this.http.get<TravelerItem>(url);
   }
 }
