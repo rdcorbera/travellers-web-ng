@@ -15,7 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
     TravelerDetailComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     FormsModule,
     AppRoutingModule
