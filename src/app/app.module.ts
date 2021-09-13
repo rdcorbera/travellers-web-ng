@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { TravellersComponent } from './home/travellers/travellers.component';
 import { TravelerDetailComponent } from './home/traveler-detail/traveler-detail.component';
 import { AppRoutingModule } from './app-routing.module';
+import { UiComponentsModule } from 'ui-components';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     TransferHttpCacheModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UiComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

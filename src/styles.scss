@@ -1,3 +1,8 @@
+// Variables
+$font-family: Arial, Helvetica, sans-serif;
+$color-primary: #369;
+$color-secondary: #333;
+
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
 h1 {
@@ -19,5 +24,5 @@ body, input[type="text"], button {
 }
 /* everywhere else */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-family;
 }
