@@ -1,0 +1,44 @@
+@import '../../styles.scss';
+
+.wrapper {
+  font-family: $font-family;
+  background-color: #eee;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.app-name {
+  display: none;
+}
+
+.wrapper .actions ui-button {
+  margin-left: 10px;
+}
+
+.userinfo {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .app-name {
+    color: $color-primary;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1;
+    margin: 6px 0 6px 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .userinfo {
+    display: inline-block;
+  }
+}
