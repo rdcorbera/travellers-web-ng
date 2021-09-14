@@ -11,13 +11,13 @@ import { TravelerService } from '../services/traveler.service';
 })
 export class TravelerDetailComponent implements OnInit {
 
-  @Input() selectedItem?: TravelerItem;
+  selectedItem?: TravelerItem;
 
   constructor(
     private route: ActivatedRoute,
     private location: Location,
     private travelerService: TravelerService
-  ) { }
+  ) {}
 
   ngOnInit(): void {
     this.getTraveler();

@@ -1,0 +1,39 @@
+@import '../../../../styles.scss';
+
+.card {
+  font-family: $font-family;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin: 1rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.card-title {
+  font-size: larger;
+  margin-bottom: .5rem;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.card-subtitle {
+  font-size: medium;
+  font-weight: normal;
+  margin-top: -.25rem;
+  margin-bottom: 0;
+}
+
+.card-actions {
+  margin-top: 1rem;
+}

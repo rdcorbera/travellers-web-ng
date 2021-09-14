@@ -1,10 +1,6 @@
-<h2>Travellers</h2>
-
-<ul class="travellers">
-    <li *ngFor="let traveler of travellers" [class.selected]="traveler === selectedItem">
-        <a routerLink="/detail/{{traveler.id}}">
-            <span class="badge">{{traveler.id}}</span> {{traveler.firstname}} {{traveler.lastname}} -
-            {{traveler.country}}
-        </a>
-    </li>
-</ul>
+<ui-header></ui-header>
+<div class="main">
+    <div *ngFor="let traveler of travellers">
+        <app-traveler-item [item]="traveler"></app-traveler-item>
+    </div>
+</div>
