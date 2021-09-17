@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TravelerItem } from '../models/traveler-item';
+import { TravelerItem } from '../../../models/traveler-item';
 
 @Component({
   selector: 'app-traveler-item',

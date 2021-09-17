@@ -15,6 +15,16 @@ svg {
   vertical-align: top;
 }
 
+.main-navigation {
+  display: inline-block;
+  margin-left: 1em;
+  padding: 0.4em 0;
+}
+
+.main-navigation a {
+  margin-right: 0.5em;
+}
+
 .app-name {
   display: none;
 }

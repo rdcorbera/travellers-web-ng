@@ -7,17 +7,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { UiComponentsModule } from 'ui-components';
 
 import { AppComponent } from './app.component';
-import { TravellersComponent } from './home/travellers/travellers.component';
-import { TravelerDetailComponent } from './home/traveler-detail/traveler-detail.component';
-import { TravelerItemComponent } from './home/travellers/traveler-item/traveler-item.component';
 import { FeatureActivitiesModule } from 'feature-activities';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    TravellersComponent,
-    TravelerItemComponent,
-    TravelerDetailComponent
+    AppComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

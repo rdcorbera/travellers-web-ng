@@ -25,6 +25,10 @@
         "dist/feature-activities/feature-activities",
         "dist/feature-activities"
       ],
+      "feature-travellers": [
+        "dist/feature-travellers/feature-travellers",
+        "dist/feature-travellers"
+      ],
       "ui-components": [
         "dist/ui-components/ui-components",
         "dist/ui-components"

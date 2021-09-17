@@ -1,15 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { TravelerItem } from '../travellers/models/traveler-item';
-import { TravelerService } from '../services/traveler.service';
+import { TravelerItem } from '../../models/traveler-item';
+import { TravelerService } from '../../services/traveler.service';
 
 @Component({
   selector: 'app-traveler-detail',
-  templateUrl: './traveler-detail.component.html',
-  styleUrls: ['./traveler-detail.component.scss']
+  templateUrl: './traveler-detail.page.html',
+  styleUrls: ['./traveler-detail.page.scss']
 })
-export class TravelerDetailComponent implements OnInit {
+export class TravelerDetailPage implements OnInit {
 
   selectedItem?: TravelerItem;
 
