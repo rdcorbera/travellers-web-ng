@@ -162,6 +162,12 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+          }
         }
       }
     },
@@ -192,6 +198,15 @@
             "main": "projects/ui-components/src/test.ts",
             "tsConfig": "projects/ui-components/tsconfig.spec.json",
             "karmaConfig": "projects/ui-components/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ui-components/src/lib/**/*.ts",
+              "projects/ui-components/src/lib/**/*.html"
+            ]
           }
         }
       }
@@ -224,6 +239,15 @@
             "tsConfig": "projects/feature-activities/tsconfig.spec.json",
             "karmaConfig": "projects/feature-activities/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/feature-activities/src/lib/**/*.ts",
+              "projects/feature-activities/src/lib/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -254,6 +278,15 @@
             "main": "projects/feature-travellers/src/test.ts",
             "tsConfig": "projects/feature-travellers/tsconfig.spec.json",
             "karmaConfig": "projects/feature-travellers/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/feature-travellers/src/lib/**/*.ts",
+              "projects/feature-travellers/src/lib/**/*.html"
+            ]
           }
         }
       }
