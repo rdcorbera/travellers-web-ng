@@ -195,6 +195,37 @@
           }
         }
       }
+    },
+    "feature-activities": {
+      "projectType": "library",
+      "root": "projects/feature-activities",
+      "sourceRoot": "projects/feature-activities/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/feature-activities/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/feature-activities/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/feature-activities/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/feature-activities/src/test.ts",
+            "tsConfig": "projects/feature-activities/tsconfig.spec.json",
+            "karmaConfig": "projects/feature-activities/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "travellers-web"

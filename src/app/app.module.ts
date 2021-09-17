@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { TravellersComponent } from './home/travellers/travellers.component';
 import { TravelerDetailComponent } from './home/traveler-detail/traveler-detail.component';
 import { TravelerItemComponent } from './home/travellers/traveler-item/traveler-item.component';
+import { FeatureActivitiesModule } from 'feature-activities';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TravelerItemComponent } from './home/travellers/traveler-item/traveler-
     TransferHttpCacheModule,
     FormsModule,
     AppRoutingModule,
-    UiComponentsModule
+    UiComponentsModule,
+    FeatureActivitiesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

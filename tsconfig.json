@@ -21,6 +21,10 @@
       "dom"
     ],
     "paths": {
+      "feature-activities": [
+        "dist/feature-activities/feature-activities",
+        "dist/feature-activities"
+      ],
       "ui-components": [
         "dist/ui-components/ui-components",
         "dist/ui-components"
